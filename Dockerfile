@@ -1,9 +1,9 @@
 FROM alpine:latest
 
-ENV CONFIG_JSON1="{\n  'log': {\n    'loglevel': 'warning'\n  },\n  'inbound': {\n    'protocol': 'vmess',\n    'port': "
-ENV CONFIG_JSON2=",\n    'settings': {\n      'clients': [\n        {\n          'id': '"
+ENV CONFIG_JSON1="{\n  \"log\": {\n    \"loglevel\": \"warning\"\n  },\n  \"inbound\": {\n    \"protocol\": \"vmess\",\n    \"port\": "
+ENV CONFIG_JSON2=",\n    \"settings\": {\n      \"clients\": [\n        {\n          \"id\": \""
 ENV UUID=none
-ENV CONFIG_JSON3="',\n          'alterId': 64,\n          'security': 'none'\n        }\n      ]\n    },\n    'streamSettings': {\n      'network': 'ws'\n    }\n  },\n  'inboundDetour': [],\n  'outbound': {\n    'protocol': 'freedom',\n   'settings': {}\n  }\n}"
+ENV CONFIG_JSON3="\",\n          \"alterId\": 64,\n          \"security\": \"none\"\n        }\n      ]\n    },\n    \"streamSettings\": {\n      \"network\": \"ws\"\n    }\n  },\n  \"inboundDetour\": [],\n  \"outbound\": {\n    \"protocol\": \"freedom\",\n   \"settings\": {}\n  }\n}"
 ENV CERT_PEM=none
 ENV KEY_PEM=none
 ENV VER=3.1
