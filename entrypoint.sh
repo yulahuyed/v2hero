@@ -3,7 +3,7 @@ if [ "${CONFIG_URL}" ]
 then
     curl -L -o config.json "${CONFIG_URL}"
     sed -i 's/${OID}/${UUID}/g' config.json
-    sed -i 's/${OPORT}/${PORT}/g' config.json
+    sed -i 's/${OPORT}/$PORT/g' config.json
 else
     echo -e -n "$CONFIG_JSON1" > config.json
     echo -e -n "$PORT" >> config.json
